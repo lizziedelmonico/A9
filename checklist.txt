@@ -1,0 +1,81 @@
+# CSC 212 Data Structures
+## Homework 9 Checklist
+
+Listed below are various aspects of the assignment.  When you turn in your work, please indicate the status of each item
+
+- YES: indicates that the item is fully complete
+- NO: indicates that the item is not attempted
+- PART: indicates that the item is attempted but not fully complete
+
+
+## Assignment Points:
+
+(For this assignment, each mini-project is worth up to four points.  You may earn a maximum of ten points from this section.)
+
+
+### Fractal Dragon and Friends
+
+_____ 1 pt: Implements the fractal dragon correctly
+
+_____ 1 pt: Implements the fractal seahorse correctly
+
+_____ 1 pt: Implements the fractal snowflake correctly
+
+_____ 1 pt: Recursive implementations are simple and direct
+
+
+### Building A Better BST
+
+_____ 1 pt: Implements lookup method correctly
+
+_____ 1 pt: Implements insert method correctly
+
+_____ 1 pt: Implements delete method correctly
+
+_____ 1 pt: Implements left and right rotation methods correctly
+
+
+### Great Recursive Conversions
+
+_____ 2 pts: Implements tree to DLL conversion correctly
+
+_____ 2 pts: Implements array to binary tree conversion correctly
+
+
+### Heaps of Fun
+
+_____ 1 pt: Implements utility FILL-IN methods correctly
+
+_____ 1 pt: Implements insert & bubble up method correctly
+
+_____ 1 pt: Implements pop & bubble down method correctly
+
+_____ 1 pt: Implements heapsort correctly
+
+
+## Kudos:
+
+_____ (kudos) Complete all four mini-projects
+
+
+## General Items:
+
+_____ 4 pts: Programs compile without errors or warnings
+
+_____ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+
+_____ 2 pt: Complies with style guidelines (missing items 1 pt each):
+
+      _____ Classes & class members all have Javadoc header comments
+
+      _____ Clear and consistent indentation of bracketed sections
+
+      _____ Adheres to Java conventions on naming & capitalization
+
+      _____ Methods & variables all have clear and accurate names
+
+      _____ Methods avoid confusing side effects
+
+_____ 1 pt: All required files included with submission (including completed checklist file)
+
+_____ 1 pt: readme.md contains reflection on the assignment
