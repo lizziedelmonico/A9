@@ -5,8 +5,16 @@
  * @version Fall 2023
  */
 public class Conversion {
+  
+
   /** Converts a sorted array to a balanced binary tree */
   public static <T extends Comparable<T>> BinaryTree<T> arrayToBinaryTree(T[] arr) {
+    NodeDL root;
+    if(arr[0] > arr[arr.length-1]){
+
+    }
+
+
     return null; // replace this with your implementation
   }
 

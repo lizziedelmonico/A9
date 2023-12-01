@@ -31,17 +31,32 @@ class Snowflake extends JComponent {
   *
   *  @param rank  The rank of the snowflake
   *  @param p1    One endpoint of the snowflake
-  *  @param p4    The other endpoint of the snowflake
+  *  @param p5    The other endpoint of the snowflake
   *  @param g     The graphics object to draw into
   */
   private void drawEdge(int rank, Point p1, Point p5, Graphics g) {
     // the other points of the snowflake:
     int dx = (p5.x-p1.x);
     int dy = (p5.y-p1.y);
+    Point p2 = new Point(p1.x+dx/3,p1.y+dy/3);
+    Point p3 = new Point((int)(p1.x+dx/2+dy*Math.sqrt(3)/6),(int)(p1.y-dx*Math.sqrt(3)/6+dy/2));
+    Point p4 = new Point((int) (p5.x-dx/3),(int) (p5.y-dy/3));
 
 
-    // WRITE THE RECURSIVE CODE HERE:
+    // WRITE THE RECURSIVE CODE HERE
+    if(rank == 1){
+      g.drawLine(p1.x,p1.y,p2.x,p2.y);
+      g.drawLine(p2.x,p2.y,p3.x,p3.y);
+      g.drawLine(p3.x,p3.y,p4.x,p4.y);
+      g.drawLine(p4.x,p4.y,p5.x,p5.y);
+    }
+    if(rank > 1){
+      drawEdge(rank-1,p1,p2,g);
+      drawEdge(rank-1,p2,p3,g);
+      drawEdge(rank-1,p3,p4,g);
+      drawEdge(rank-1,p4,p5,g);
 
+    }
   }
 
   /**

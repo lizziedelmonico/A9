@@ -42,8 +42,14 @@ class Dragon extends JComponent {
     Point p2 = new Point(p1.x+dx/2-dy/2,p1.y+dx/2+dy/2);
     
     // WRITE THE RECURSIVE CODE HERE:
-    g.drawLine(p1.x,p1.y,p2.x,p2.y);
-    g.drawLine(p3.x,p3.y,p2.x,p2.y);
+    if(rank == 1){
+      g.drawLine(p1.x,p1.y,p2.x,p2.y);
+      g.drawLine(p3.x,p3.y,p2.x,p2.y);
+    }
+    if(rank > 1){
+      drawDragon(rank-1,p1,p2,g);
+      drawDragon(rank-1,p3,p2,g);
+    }
   }
 
   ////////////////////////////////////////////
@@ -85,7 +91,7 @@ class Dragon extends JComponent {
     if (args.length > 0) {
       rank = Integer.valueOf(args[0]);
     } else {
-      rank = 5;
+      rank = 20;
     }
     createAndShowGUI(rank);
   }

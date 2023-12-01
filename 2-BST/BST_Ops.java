@@ -9,7 +9,7 @@ public interface BST_Ops<E extends Comparable<E>> {
      *  @return the node of the given element, or null if not found
      */
     public BST<E> lookup(E data);
-
+    
     /**
      *  Inserts a new node into the tree
      *
